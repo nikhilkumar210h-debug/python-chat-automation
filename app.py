@@ -98,7 +98,6 @@ def main(ctx):
 
             if reply is None and ai_enabled and latest["sender"] == target_user:
                 reply = ai_reply(messages, ai_model)
-                reply = (reply)
                 if reply:
                     print("AI reply:",reply)
             if reply is None:
